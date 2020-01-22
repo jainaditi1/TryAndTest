@@ -12,57 +12,85 @@ public class IntegerAlgorithmes {
 	public static void main(String[] args) {
 
 		
-//		mixSameSizedArraysAlternatively();
-//		mixDifferentSizedArraysAlternatively();
-//		mergeTwoSortedArrays();
-//		nthUglyNumber(3, 2, 3, 5);
+		mixSameSizedArraysAlternatively();
+		
+		
+		mixDifferentSizedArraysAlternatively();
+		
+		
+		mergeTwoSortedArrays();
+		
+		
+		
+		nthUglyNumber(3, 2, 3, 5);
 
-//		divideTwoIntegers(-2147483648, -1);
+		
+		
+		divideTwoIntegers(-2147483648, -1);
 
-//		int[] hurdleArray = {1,6,3,5,2};
-//		int maxJump = 4;
-//		countExtraDoses(hurdleArray, maxJump);
+		
+		
+		
+		int[] hurdleArray = {1,6,3,5,2};
+		int maxJump = 4;
+		countExtraDoses(hurdleArray, maxJump);
 
 		
 
 //		huntNumbersInString("    -46");
 
-//		decodeWays("10");
 
-//		int[] inputArray = new int[9];
-//		fibbonacci(2, inputArray);
+		
+		decodeWays("10");
 
-//		int[] inputArray = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+		
+		int[] inputArray = new int[10];
+		fibbonacci(2, inputArray);
 
-//		int[] inputArray = { 0, 0, 1, 4, 4 };
-//
-//		findDuplicate(inputArray);
-//		findDuplicateOneLoop(inputArray, 0, inputArray.length, 0);
+		
+		
+		
+		inputArray = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+		findDuplicate(inputArray);
+		findDuplicateOneLoop(inputArray, 0, inputArray.length, 0);
 
-//		int[] inputArray = { 0, 3, 7, 9, 11, 12, 12, 13, 13, 14 };
-//		rotateArray(inputArray, 4);
+		
+		
+		inputArray = new int[] { 0, 3, 7, 9, 11, 12, 12, 13, 13, 14 };
+		rotateArray(inputArray, 4);
 
-//		int[] inputArray = { 0, 3, 7, 1, 7, 9, 11, 6, 3, 5, 2, 13, 14 };
-//		findPairsOfSum(inputArray, 11);
+		
+		
+		inputArray = new int[] { 0, 3, 7, 1, 7, 9, 11, 6, 3, 5, 2, 13, 14 };
+		findPairsOfSum(inputArray, 11);
 
-//		int[] inputArray = { 0, 3, 7, 1, 7, 9, 11, 6, 3, 5, 2, 13, 14 };
-//		findArraySubsetOfSum(inputArray, 24);
+		
+		
+		
+		inputArray =new int[]  { 0, 3, 7, 1, 7, 9, 11, 6, 3, 5, 2, 13, 14 };
+		findArraySubsetOfSum(inputArray, 24);
 
-//		int[] inputArray = { 4, 10, 2, 2, 1, 4,3,1 };
-////		int[] inputArray = { 5, 4, 1, 2, 2, 1, 5 };
-////		int[] inputArray = { 2, 2, 1 };
-//		findUniqueNumbersInArray(inputArray);
+		
+		
+		inputArray = new int[] { 4, 10, 2, 2, 1, 4,3,1 };
+		findUniqueNumbersInArray(inputArray);
 
-//		int[] inputArray = { 4, 10, 23, 32, 1 };
-//		makeLargestNumber(inputArray);
+		
+		
+		inputArray = new int[] { 4, 10, 23, 32, 1 };
+		makeLargestNumber(inputArray);
 
-//		int[] inputArray = { 0, 3, 7, 1, 7, 9, 11, 6, 304, 5, 2, 13, 14 };
+		
+		
+//		int[] inputArray = new int[10];
+//		inputArray = new int[]  { 0, 3, 7, 1, 7, 9, 11, 6, 304, 5, 2, 13, 14 };
 //		findNthDigit();
-//	
+		
 
 
-//		int i = 1534236469;
-//		reverseInteger(i);
+
+		int i = 1534236469;
+		reverseInteger(i);
 
 		
 		

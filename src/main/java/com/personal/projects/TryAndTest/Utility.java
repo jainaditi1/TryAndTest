@@ -14,11 +14,11 @@ public class Utility {
 		int[] intArray = { 1, 2, 3, 4, 5 };
 		intArrayToStringArray(intArray);
 
-//		convertStringToListAndViceVersa();
-//
-//		convertIntArrayToList();
+		convertStringToListAndViceVersa();
+
+		convertIntArrayToList();
 		
-//		alphaNumericString("A man, a plan, a canal: Panama");
+		alphaNumericString("A man, a plan, a canal: Panama");
 		
 		convertIntCharToInteger("4");
 		
