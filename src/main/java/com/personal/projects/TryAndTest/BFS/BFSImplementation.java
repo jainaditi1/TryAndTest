@@ -1,4 +1,4 @@
-package com.personal.projects.TryAndTest;
+package com.personal.projects.TryAndTest.BFS;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -11,163 +11,180 @@ import java.util.stream.Collectors;
 public class IntegerAlgorithmes {
 	public static void main(String[] args) {
 
-		
-		mixSameSizedArraysAlternatively();
-		
-		
-		mixDifferentSizedArraysAlternatively();
-		
-		
-		mergeTwoSortedArrays();
-		
-		
-		
-		nthUglyNumber(3, 2, 3, 5);
-
-		
-		
-		divideTwoIntegers(-2147483648, -1);
-
-		
-		
-		
-		int[] hurdleArray = {1,6,3,5,2};
-		int maxJump = 4;
-		countExtraDoses(hurdleArray, maxJump);
-
-		
-
-//		huntNumbersInString("    -46");
-
-
-		
-		decodeWays("10");
-
-		
-		int[] inputArray = new int[10];
-		fibbonacci(2, inputArray);
-
-		
-		
-		
-		inputArray = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
-		findDuplicate(inputArray);
-		findDuplicateOneLoop(inputArray, 0, inputArray.length, 0);
-
-		
-		
-		inputArray = new int[] { 0, 3, 7, 9, 11, 12, 12, 13, 13, 14 };
-		rotateArray(inputArray, 4);
-
-		
-		
-		inputArray = new int[] { 0, 3, 7, 1, 7, 9, 11, 6, 3, 5, 2, 13, 14 };
-		findPairsOfSum(inputArray, 11);
-
-		
-		
-		
-		inputArray =new int[]  { 0, 3, 7, 1, 7, 9, 11, 6, 3, 5, 2, 13, 14 };
-		findArraySubsetOfSum(inputArray, 24);
-
-		
-		
-		inputArray = new int[] { 4, 10, 2, 2, 1, 4,3,1 };
-		findUniqueNumbersInArray(inputArray);
-
-		
-		
-		inputArray = new int[] { 4, 10, 23, 32, 1 };
-		makeLargestNumber(inputArray);
-
-		
-		
+//		mixSameSizedArraysAlternatively();
+//		
+//		
+//		mixDifferentSizedArraysAlternatively();
+//		
+//		
+//		mergeTwoSortedArrays();
+//		
+//		
+//		
+//		nthUglyNumber(3, 2, 3, 5);
+//
+//		
+//		
+//		divideTwoIntegers(-2147483648, -1);
+//
+//		
+//		
+//		
+//		int[] hurdleArray = {1,6,3,5,2};
+//		int maxJump = 4;
+//		countExtraDoses(hurdleArray, maxJump);
+//
+//		
+//
+////		huntNumbersInString("    -46");
+//
+//
+//		
+//		decodeWays("10");
+//
+//		
 //		int[] inputArray = new int[10];
-//		inputArray = new int[]  { 0, 3, 7, 1, 7, 9, 11, 6, 304, 5, 2, 13, 14 };
-//		findNthDigit();
+//		fibbonacci(2, inputArray);
+//
+//		
+//		
+//		
+//		inputArray = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+//		findDuplicate(inputArray);
+//		findDuplicateOneLoop(inputArray, 0, inputArray.length, 0);
+//
+//		
+//		
+//		inputArray = new int[] { 0, 3, 7, 9, 11, 12, 12, 13, 13, 14 };
+//		rotateArray(inputArray, 4);
+//
+//		
+//		
+//		inputArray = new int[] { 0, 3, 7, 1, 7, 9, 11, 6, 3, 5, 2, 13, 14 };
+//		findPairsOfSum(inputArray, 11);
+//
+//		
+//		
+//		
+//		inputArray =new int[]  { 0, 3, 7, 1, 7, 9, 11, 6, 3, 5, 2, 13, 14 };
+//		findArraySubsetOfSum(inputArray, 24);
+//
+//		
+//		
+//		inputArray = new int[] { 4, 10, 2, 2, 1, 4,3,1 };
+//		findUniqueNumbersInArray(inputArray);
+//
+//		
+//		
+//		inputArray = new int[] { 4, 10, 23, 32, 1 };
+//		makeLargestNumber(inputArray);
+//
+//		
+//		
+////		int[] inputArray = new int[10];
+////		inputArray = new int[]  { 0, 3, 7, 1, 7, 9, 11, 6, 304, 5, 2, 13, 14 };
+////		findNthDigit();
+//		
+//
+//
+//
+//		int i = 1534236469;
+//		reverseInteger(i);
+//
+//		
+//		
+//		//UN DONE
+////		int[] sortedArray_1 = { 2, 4, 8, 19};
+////		int[] sortedArray_2 = { 1, 4, 7, 20 };
+////		mergeSortedArrays(sortedArray_1, sortedArray_2);
+//
+//		
+//		
+//		int picture[][] = {
+//					{ 5, 1, 9,11},
+//					{2, 4, 8,10},
+//					{13, 3, 6, 7},
+//					{15,14,12,16}	
+//							};
+// 		rotatePicture(picture);
+
+//		int[] inputArray = new int[] { -21, -31, 7, 1, 7, 9, -11, 6, 34, 5, 2, 13, 14 };
+//		largestMultiplicationOf3Digits(inputArray);
+		
 		
 
 
-
-		int i = 1534236469;
-		reverseInteger(i);
-
-		
-		
-		//UN DONE
-//		int[] sortedArray_1 = { 2, 4, 8, 19};
-//		int[] sortedArray_2 = { 1, 4, 7, 20 };
-//		mergeSortedArrays(sortedArray_1, sortedArray_2);
-
-		
-		
-		int picture[][] = {
-					{ 5, 1, 9,11},
-					{2, 4, 8,10},
-					{13, 3, 6, 7},
-					{15,14,12,16}	
-							};
- 		rotatePicture(picture);
- 		
- 		
- 		
-		
 	}
 	
 	
+	
+
+	private static int largestMultiplicationOf3Digits(int[] input) {
+		int result = 0;
+
+		Arrays.sort(input);
+
+		int i = 0;
+		int j = input.length - 1;
+
+		int leftProduct = input[i] * input[i + 1];
+		int rightProduct = input[j] * input[j - 1];
+
+		if (leftProduct > rightProduct) {
+			result = leftProduct * input[j];
+		} else {
+			result = rightProduct * input[j-2];
+		}
+
+		System.out.println(result);
+
+		return result;
+	}
+
 	private static void rotatePicture(int picture[][]) {
-		
-		for(int row = 0, col = 0; row<picture.length; row++, col++) {
-			
+
+		for (int row = 0, col = 0; row < picture.length; row++, col++) {
+
 			int temp = picture[row][col];
-			
+
 			picture[row][col] = picture[col][row];
-			
+
 			picture[col][row] = temp;
 		}
-		
-		
-		for(int row = 0, col1 = 0, col2 = picture.length-1; col1<picture.length/2; row++, col1++, col2--) {
-			
+
+		for (int row = 0, col1 = 0, col2 = picture.length - 1; col1 < picture.length / 2; row++, col1++, col2--) {
+
 			int temp = picture[row][col1];
-			
+
 			picture[row][col1] = picture[row][col2];
-			
+
 			picture[row][col2] = temp;
-			
+
 		}
-		
-		
-		for(int row = 0, col = 0; row<picture.length; row++, col++) {
+
+		for (int row = 0, col = 0; row < picture.length; row++, col++) {
 			System.out.println(picture[row][col] + " , ");
 		}
-		
-		
+
 	}
-	
 
 	private static void mergeSortedArrays(int[] sortedArray_1, int[] sortedArray_2) {
 
 		int[] resultArray = new int[sortedArray_1.length + sortedArray_2.length];
 		int counter = 0;
-		for (int i = 0; i<sortedArray_2.length; i++) {
-			if(sortedArray_1[counter] > sortedArray_2[i]) {
-				
+		for (int i = 0; i < sortedArray_2.length; i++) {
+			if (sortedArray_1[counter] > sortedArray_2[i]) {
+
 			}
 		}
-			
-			
-			
-			
+
 //			while (sortedArray_1[i] > sortedArray_2[j]) {
 //				int temp = sortedArray_1[i];
 //				resultArray[i] = sortedArray_2[j];
 //				sortedArray_2[j] = temp;
 //				j++;
 //			}
-		}
-
-	
+	}
 
 	// { 2, 4, 8, 19, 1, 4, 7, 20 }
 
@@ -180,8 +197,6 @@ public class IntegerAlgorithmes {
 //		}
 //		
 //	}
-
-	
 
 	private static int reverseInteger(int input) {
 		Long result = new Long(0);
@@ -220,8 +235,6 @@ public class IntegerAlgorithmes {
 		System.out.println(Integer.parseInt(resultString));
 
 	}
-
-	
 
 	private static void makeLargestNumber(int[] inputArray) {
 		String[] strArray = Utility.intArrayToStringArray(inputArray);
@@ -390,8 +403,6 @@ public class IntegerAlgorithmes {
 
 	}
 
-
-
 	public static int countExtraDoses(int[] hurdleArray, int maxJump) {
 		int requiredDose = 0;
 		for (int i = 0; i < hurdleArray.length; i++) {
@@ -544,6 +555,5 @@ public class IntegerAlgorithmes {
 			System.out.print(i + ", ");
 		}
 	}
-
 
 }

@@ -1,4 +1,4 @@
-package com.personal.projects.TryAndTest;
+package com.personal.projects.TryAndTest.Sort;
 
 import java.util.Arrays;
 import java.util.TreeSet;

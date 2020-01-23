@@ -1,4 +1,4 @@
-package com.personal.projects.TryAndTest;
+package com.personal.projects.TryAndTest.Sort;
 
 public class Sorting_Algorithms {
 	public static void main(String[] args) {

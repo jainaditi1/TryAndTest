@@ -52,6 +52,27 @@ public class StringAlgorithms {
 		
 		
 		huntNumbersInString("    -46");
+		
+		
+		String sentence = "the day is sunny  the the the sunny is is";
+		wordFrequencey(sentence);
+	}
+	
+	public static HashMap<String, Integer> wordFrequencey(String sentence) {
+	
+		HashMap<String, Integer> counterMap = new HashMap<String, Integer>();
+		String[] splittedString = sentence.split("\\s+");
+		
+		for(String s : splittedString) {
+			if(counterMap.containsKey(s)) {
+				counterMap.put(s, counterMap.get(s) + 1);
+			} else {
+				counterMap.put(s, 1);	
+			}
+		}
+		
+		
+		return counterMap;
 	}
 	
 	
@@ -244,6 +265,7 @@ public class StringAlgorithms {
 	}
 
 	private static String reverseWordsInString(String inputString) {
+		//split by all spaces
 		String[] splittedString = inputString.split("\\s+");
 		String resultString = "";
 

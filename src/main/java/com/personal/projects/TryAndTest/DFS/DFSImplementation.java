@@ -1,4 +1,4 @@
-package com.personal.projects.TryAndTest;
+package com.personal.projects.TryAndTest.DFS;
 
 import java.util.ArrayList;
 import java.util.List;
