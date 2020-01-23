@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
-public class SparseArrays {
+public class LeadershipBoard_Alice {
 	public static void main(String[] args) {
 //		String[] input = {"abcde", "basdn", "sdaklfj", "basdn", "basdn", "ab", "abcde", "basdn", "basdn", "ab", "abcde"};
 //		String[] queries = {"basdn", "ab", "xyb"};
