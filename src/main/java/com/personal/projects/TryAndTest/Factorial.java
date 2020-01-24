@@ -5,11 +5,11 @@ public class Factorial {
 		findFactorialOf(20);
 	}
 	
-	private static void findFactorialOf(int input) {
+	public static long findFactorialOf(int input) {
 		long factorial = 1;
 		for(int i = input; i>0; i--) {
 			factorial*=i;
 		}
-		System.out.println(factorial);
+		return factorial;
 	}	
 }
