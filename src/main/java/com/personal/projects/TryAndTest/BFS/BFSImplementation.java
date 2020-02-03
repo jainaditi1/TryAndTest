@@ -20,8 +20,6 @@ public class BFSImplementation {
 		node7 = new BFSNode(7, node4, node8);
 		
 
-		
-
 		BFS.breadthFirstSearch(node1);
 		
 	}

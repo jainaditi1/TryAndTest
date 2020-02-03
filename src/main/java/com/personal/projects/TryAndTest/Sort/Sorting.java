@@ -6,9 +6,9 @@ import java.util.TreeSet;
 public class Sorting {
 
 	public static void main(String[] args) {
-		sort_INSERTION_SORT();
-//		sortStrings_TREESET();
-//		sortStrings_ARRAYS_SORT();
+//		sort_INSERTION_SORT();
+////		sortStrings_TREESET();
+		sortStrings_ARRAYS_SORT();
 	}
 
 //	O(n^2)
@@ -58,7 +58,7 @@ public class Sorting {
 	}
 
 	private static void sortStrings_ARRAYS_SORT() {
-		String[] strArr = { "adam", "sakina", "adam", "lucy", "jake", "bob" };
+		String[] strArr = { "adam", "sakina", "Adam", "lucY", "jake", "bob" };
 		Arrays.sort(strArr, String.CASE_INSENSITIVE_ORDER);
 		for (String s : strArr) {
 			System.out.println(s);

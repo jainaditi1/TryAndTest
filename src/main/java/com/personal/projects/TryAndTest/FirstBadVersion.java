@@ -1,4 +1,4 @@
-package com.personal.projects.TryAndTest.Sort;
+package com.personal.projects.TryAndTest;
 
 public class FirstBadVersion {
 

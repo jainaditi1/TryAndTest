@@ -1,12 +1,13 @@
-package com.personal.projects.TryAndTest.BST;
+package com.personal.projects.TryAndTest.BinarySearchTree;
 
-public class BSTValidator {
 
-	 public boolean isValidBST(TreeNode root) {
+public class BST_ISValid_Tree {
+
+	 public boolean isValidBST(TreeNode_valid root) {
 	        return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
 	    }
 	    
-	    public boolean isValidBST(TreeNode root, long minVal, long maxVal) {
+	    public boolean isValidBST(TreeNode_valid root, long minVal, long maxVal) {
 	        if (root == null) return true;
 	        if (root.value >= maxVal || root.value <= minVal) return false;
 	        
@@ -16,5 +17,17 @@ public class BSTValidator {
 	        return isValidBST(root.leftChild, minVal, root.value) 
 	        		&& isValidBST(root.rightChild, root.value, maxVal);
 	    }
+
+}
+
+class TreeNode_valid {
+	int value;
+	TreeNode_valid leftChild;
+	TreeNode_valid rightChild;
+
+	public TreeNode_valid(int value) {
+		super();
+		this.value = value;
+	}
 
 }

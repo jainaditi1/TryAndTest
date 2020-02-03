@@ -1,49 +1,60 @@
 package com.personal.projects.TryAndTest.Sort;
 
-
-class MergeTwoSorted {
-	// Merge arr1[0..n1-1] and arr2[0..n2-1]
-	// into arr3[0..n1+n2-1]
-	public static void mergeArrays(int[] firstArray, int[] secondArray, int[] resultArray, int firstArrayLength, int secondArrayLength) {
-		int i = 0, j = 0, k = 0;
-
-		// Traverse both array
-		while (i < firstArrayLength && j < secondArrayLength) {
-			// Check if current element of first
-			// array is smaller than current element
-			// of second array. If yes, store first
-			// array element and increment first array
-			// index. Otherwise do same with second array
-			if (firstArray[i] < secondArray[j])
-				resultArray[k++] = firstArray[i++];
-			else
-				resultArray[k++] = secondArray[j++];
-		}
-
-		// Store remaining elements of first array
-		while (i < firstArrayLength)
-			resultArray[k++] = firstArray[i++];
-
-		// Store remaining elements of second array
-		while (j < secondArrayLength)
-			resultArray[k++] = secondArray[j++];
-	}
-
+public class MergeSort {
 	public static void main(String[] args) {
-		int[] arr1 = { 1, 3, 5, 7 };
-		int n1 = arr1.length;
 
-		int[] arr2 = { 2, 4, 6, 8 };
-		int n2 = arr2.length;
+		int[] inputArray = { 5, 1, 6, 2, 3, 4 ,8};
+		mergeSort(inputArray, inputArray.length);
 
-		int[] arr3 = new int[n1 + n2];
-
-		mergeArrays(arr1, arr2, arr3, n1, n2);
-
-		System.out.println("Array after merging");
-		for (int i = 0; i < n1 + n2; i++)
-			System.out.print(arr3[i] + " ");
+		for(int i : inputArray) {
+			System.out.println(i);
+		}
 	}
-}
 
-/* This code is contributed by Mr. Somesh Awasthi */
+	public static void mergeSort(int[] inputArray, int arrayLenth) {
+		if (inputArray == null || arrayLenth < 2) {
+			return;
+		}
+		int mid = arrayLenth / 2;
+		int[] leftArray = new int[mid];
+		int[] rightArray = new int[arrayLenth - mid];
+
+		for (int i = 0; i < mid; i++) {
+			leftArray[i] = inputArray[i];
+		}
+		
+		//i starts from mid and reaches to end of array
+		//hence i - mid will be mid-mid or next mid+1 - mid etc
+		for (int i = mid; i < arrayLenth; i++) {
+			rightArray[i - mid] = inputArray[i];
+		}
+		mergeSort(leftArray, mid);
+		mergeSort(rightArray, arrayLenth - mid);
+
+		merge(inputArray, leftArray, rightArray, mid, arrayLenth - mid);
+	}
+
+	
+	//input array will be modified as result array so inputarray = result array
+	public static void merge(int[] resultArray, int[] leftArray, int[] rightArray, int leftArrayLength,
+			int rightArrayLength) {
+
+		int leftArrayPointer = 0, rightArrayPointer = 0, resultArrayPointer = 0;
+
+		while (leftArrayPointer < leftArrayLength && rightArrayPointer < rightArrayLength) {
+			if (leftArray[leftArrayPointer] <= rightArray[rightArrayPointer]) {
+				resultArray[resultArrayPointer++] = leftArray[leftArrayPointer++];
+			} else {
+				resultArray[resultArrayPointer++] = rightArray[rightArrayPointer++];
+			}
+		}
+//		while (leftArrayPointer < leftArrayLength) {
+//			resultArray[resultArrayPointer++] = leftArray[leftArrayPointer++];
+//		}
+//		while (rightArrayPointer < rightArrayLength) {
+//			resultArray[resultArrayPointer++] = rightArray[rightArrayPointer++];
+//		}
+		
+	}
+
+}
