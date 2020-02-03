@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 
-public class LevelOrderTraversal_BinaryTree {
+public class LevelOrderTraversal_BFS_BinaryTree {
 
 	private static BinaryTreeNode head;
 

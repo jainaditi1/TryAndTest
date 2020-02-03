@@ -10,13 +10,14 @@ public class PermutationsString {
 
 	}
 
-	private static void permutation(ArrayList<String> permutedWords, String currentPermutation, String word) {
+	private static void permutation(ArrayList<String> permutedWords, String prefix, String word) {
 		if (word.isEmpty()) {
-			permutedWords.add(currentPermutation);
+			permutedWords.add(prefix);
 //			System.out.println(currentPermutation + word);
 
 		}
 		for (int i = 0; i < word.length(); i++) {
+			System.out.println(prefix);
 			System.out.println(word.charAt(i));
 			System.out.println(" word.substring(0, i) :: " + word.substring(0, i));
 			System.out.println(word.substring(i + 1, word.length()));
@@ -34,8 +35,9 @@ public class PermutationsString {
 			//m
 			//
 			//an
-			
-			permutation(permutedWords, currentPermutation + word.charAt(i),
+			//Prefix are letters that are already chosen
+			//each time word will have remaining letters to choose from
+			permutation(permutedWords, prefix + word.charAt(i),
 					word.substring(0, i) + word.substring(i + 1, word.length()));
 		}
 		

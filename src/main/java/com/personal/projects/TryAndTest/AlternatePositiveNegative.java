@@ -9,6 +9,7 @@ public class AlternatePositiveNegative {
 		int[] input = { -5, -2, 5, 2, 4, 7, 1, 8, 0, -8 };
 
 		Arrays.sort(input);
+		
 
 		if (input[0] >= 0 || input[input.length - 1] <= 0) {
 			return;

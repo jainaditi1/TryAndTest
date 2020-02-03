@@ -31,6 +31,7 @@ public class SudokuValidator {
 
 				if (matrix[row][column] != '.') {
 
+					//make sure while iterating any element does NOT already exists in hashset
 					if (!seenElements.add("Element " + matrix[row][column] + " found in " + row + " row")
 							|| !seenElements.add("Element " + matrix[row][column] + " found in " + column + " column")
 							|| !seenElements.add("Element " + matrix[row][column] + " found in " + row / 3 + " - "
